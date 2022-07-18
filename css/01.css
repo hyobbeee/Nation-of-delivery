@@ -1,0 +1,440 @@
+@import url(reset.css);
+
+.section {
+    background-color: #2BC1BC;
+}
+
+#fullpage {
+    background-size: cover;
+    background-position: center top;
+}
+
+.mainpage {
+    background-image: url(../img/main_03_2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 1024px;
+    padding: 165px 50px 0px;
+    box-sizing: border-box;
+}
+
+.inner{
+    margin: 0 auto;
+    width : 1024px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 1024px;
+    padding: 60px 173px 0px 50px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+
+.header .header_left {
+    width: 142px;
+    height: auto;
+    background: url(../img/배달의민족.png) no-repeat;
+    background-size: contain;
+}
+
+.header_right{
+    margin-right: 50px;
+    width: 39%;
+}
+
+.header .header_right .top_download{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out 0.3s;
+}
+
+.header .header_right .top_download img{
+    width: 140px;
+    height: 48px;
+}
+
+.header .header_right>ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 205px;
+    
+}
+
+.header .header_right>ul>li {
+    margin-right: 22px;
+}
+
+.header .header_right>ul>li:nth-child(1) {
+    margin-right: 10px;
+}
+
+.scroll{
+    position: fixed;
+    bottom: 40px;
+    left: calc(50% - 49px) ;
+}
+
+.rider_collect{
+    position: fixed;
+    display: block;
+    top:0;
+    right:0;
+    opacity: 1;
+    z-index: 3;
+    transition: opacity 0.5s;
+}
+
+.rider_collect>img{
+    object-fit: contain;
+    width: 173px;
+}
+
+/* @@@@@@@@@@@@@@@header@@@@@@@@@@@@@@@@@@@@@@ */
+
+.fp-table{
+    justify-content: flex-start;
+}
+
+.main .main_top{
+    width: 50%;
+}
+
+.main .main_top>img{
+    /* object-fit: contain; */
+    width: 100%;
+}
+
+.main .main_bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.main .main_bottom_left .download{
+    display: flex;
+}
+
+.download .download_box{
+    width: 200px;
+    height: 70px;
+    background-color: #fff;
+    margin-right: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 100px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.appstore{
+    background-image: url(../img/img-appstore-default_2x.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 140px;
+
+}
+.playstore{
+    background-image: url(../img/img-googleplay-default_2x.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 140px;
+}
+.main .main_bottom p{
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+
+.main .main_bottom_right img{
+    width: 210px;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#menuBar{
+    position: fixed;
+    top:50%;
+    right:150px;
+    transform: translateY(-30%);
+    z-index: 1000;
+}
+
+#menuBar.off{
+    display: none;
+    transition: all 1s;
+}
+
+#menuBar .gnb li{
+    height: 40px;
+}
+
+#menuBar .gnb li img{
+    width: 25px;
+}
+
+#menuBar .gnb li.active{
+    background: url(../img/dotSelect_2x.png)no-repeat top / contain;
+}
+
+
+
+/* @@@@@@@@@@@@@@content@@@@@@@@@@@@@@@@ */
+
+.contents{
+    width: 50%;
+}
+
+.contents .content_top img{
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+    position: relative;
+}
+
+.contents .content_top{
+    color: #fff;
+    line-height: 22px;
+}
+
+.contents .content_txt{
+    margin-top: 20px;
+}
+
+.contents .content_txt>span{
+    opacity: 0.5;
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+}
+
+.contents .content_txt span:last-child{
+    margin:0;
+}
+
+.s1 .content_right{
+    background: url(../img/img-bike_2x.png) no-repeat center /contain;
+    position: absolute;
+    bottom : 15%;
+    right: 0;
+    width: 62%;
+    height: 630px;
+    z-index: 10;
+}
+
+.s1 .content_right::before{
+    display: block;
+    content: '';
+    position: absolute;
+    top:3%;
+    right:12%;
+    background: url(../img/img-road_2x.png)no-repeat center/ contain;
+    width: 80%;
+    height: 630px;
+    z-index: -100;
+}
+
+.s2 .content_right{
+    background: url(../img/img-people_2x.png) no-repeat center /contain;
+    position: absolute;
+    bottom : 0;
+    right: 100px;
+    width: 62%;
+    height: 630px;
+    z-index: 10;
+}
+
+.s3 .content_right{
+    background: url(../img/img-present_2x.png) no-repeat center /contain;
+    position: absolute;
+    bottom : 0;
+    right: 60px;
+    width: 62%;
+    height: 630px;
+    z-index: 10;
+}
+
+.s3 .content_txt img{
+    width: 233px;
+    margin-top: 25px;
+}
+
+.s4 .content_right{
+    background: url(../img/img-shoppinglive_re.png) no-repeat center /contain;
+    position: absolute;
+    bottom : 0;
+    right: 60px;
+    width: 62%;
+    height: 630px;
+    z-index: 10;
+}
+
+.s5 .content_right{
+    background: url(../img/bmart_rider_2x.png) no-repeat center /contain;
+    position: absolute;
+    bottom : 14%;
+    right: 60px;
+    width: 62%;
+    height: 630px;
+    z-index: 10;
+}
+
+.s6 .content_right{
+    background: url(../img/img-flag_2x.png) no-repeat center /contain;
+    position: absolute;
+    bottom : 0;
+    right: 60px;
+    width: 62%;
+    height: 630px;
+    z-index: 10;
+}
+
+.s7{
+    background-color: #fff;
+}
+
+.wrapLast{
+    margin: 0px auto;
+}
+
+.wrapLast .contents{
+    height: 1024px;
+    margin : 100px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapLast .contents .content_left{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contentLeftTop1{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.contentLeftTop1 img{
+    height: 24px;    
+
+}
+
+.wrapLast .contents .content_right{
+    background: url(../img/우리가\ 어떤\ 민족입니까.png) no-repeat center / cover;   
+    top: 0;
+    right: 33%;
+    height: 220px;
+    width: 193px;
+    z-index: 10;
+}
+
+.content_right img{
+    width: 145px;
+    margin-top: 250px;
+}
+
+.contentLeftTop1{
+    display: grid;
+    grid-template-columns: 150px auto;
+    margin: 20px auto;
+}
+
+.contentLeftTop3 img{
+    width: 40px;
+    margin-top: 50px;
+    margin-right: 20px;
+    flex-grow: 1;
+}   
+
+.contentLeftBottom{
+    width: 300px;
+}
+
+.contentLeftBottom p{
+    padding: 0 0 25px;
+    font-family: AppleSDGothicNeo;
+    font-size: 14px;
+} 
+.contentLeftBottom a{
+    text-decoration: underline;
+}
+/* 
+.s7 .content_right{
+    background: url(../img/우리가\ 어떤\ 민족입니까.png) no-repeat center / contain;   
+    position: absolute;
+    top : 13%;
+    right: 33%;
+    height: 220px;
+    width: 193px;
+    z-index: 10;
+}
+
+.s7 .content_right::after{
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: -90px;
+    right: 50px;
+    background: url(../img/앱\ 다운로드하러\ 가기.png) no-repeat center / contain;
+    width: 145px;
+    height: 50px;
+}
+
+.s7 .content_left .contentLeftTop{
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.s7 .content_left .contentLeftTop1{
+    display: grid;
+    grid-template-columns: 150px auto;
+    margin: 20px auto;
+}
+
+.s7 .content_left .contentLeftTop1 img{
+    height: 24px;    
+}
+
+.contentLeftTop3 img{
+    width: 40px;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+.wrapLast{
+    margin: 50px 200px 0;
+}
+
+.contentLeftBottom{
+    width: 300px;
+    position: absolute;
+    bottom: 60px;
+    left: 200px;
+}
+
+.contentLeftBottom p{
+    padding: 0 0 25px;
+} */
+
+
+
